@@ -12,21 +12,11 @@ header a {
     padding: 20 0 0 0;
 }
 
-header {
-padding: 5px;
-}
-
-.header-nav {
-    align-items: baseline;
+a:hover {
+    text-decoration: underline;
 }
 
 .header-navigation {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.header-navigation-div {
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -39,6 +29,21 @@ padding: 5px;
     margin-top: 10px;
 }
 
+nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 0px 90px 0 0;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.fa-solid {
+    margin-top: -200px;
+}
+
 .cart-icon {
     margin-right: 150px;
 }
@@ -46,10 +51,6 @@ padding: 5px;
 a,
 i {
     color: #fff;
-}
-
-i {
-    max-width: 60px;
 }
 
 h1,
@@ -76,24 +77,6 @@ p {
     font-family: var(--text-other);
 }
 
-
-#menu-checkbox {
-    display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
-    left: 0;
-    transition: left 0.3s ease-in-out;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1.2em;
-    list-style: none;
-    padding: 0px 90px 0 0;
-}
-
 /* links */
 
 a {
@@ -106,7 +89,8 @@ a {
     text-decoration: underline;
 }
 
-.fa {
+.fa,
+.fa-solid {
     color: white;
     padding: 10px;
 }
@@ -120,7 +104,15 @@ button {
     height: 41px;
     top: 50%;
     left: 50%;
-    border: none;
+    border: none;   
+}
+
+button:hover,
+.cta_checkout:hover,
+.cta:hover,
+.cta_large:hover,
+.secondary_cta_large:hover {
+    background-color: var(--cta-hover);
 }
 
 .cta_large {
@@ -154,14 +146,18 @@ button {
     margin-top: 155px;
 }
 
+footer a {
+    font-family: var(--text-heading);
+   font-size: 1.2em;
+   padding-left: 5px;
+}
+
 footer {
     background-color: rgba(46, 40, 40, 0.2);
-    padding: 50px;
-    margin: 50px 0 0 0;
-    height: 100%;
-    display: grid;
-    flex: 1;
-    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 0px;
 }
 
 .product_page h1, .about_page h3, .contact_page h3 {
@@ -181,6 +177,7 @@ footer {
     position: relative;
     max-width: 100%;
     margin-bottom: 70px;
+    display: flexbox;
 }
 
 .hero_content_one,
@@ -304,7 +301,7 @@ footer {
 
 .product_page {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 90px auto;
     display: flex;
 }
 
@@ -349,7 +346,7 @@ footer {
 
 .about_page {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 80px auto;
     display: flex;
 }
 
@@ -397,7 +394,7 @@ h5 {
 .cart {
     display: flex;
     max-width: 1000px;
-    margin: auto;
+    margin: 80px auto;
 }
 
 .cart_page img {
@@ -405,7 +402,9 @@ h5 {
   }
 
 .cart_page h1,
-.checkout_one h1 {
+.checkout_one h1,
+.about_page h1,
+.contact_page h1 {
     color: #FEC818;
     font-size: 2em;
 }
@@ -433,7 +432,7 @@ h5 {
 }
 
 .icon {
-    padding: 20px;
+    padding: 50px;
 }
 
 .prog-bar {
@@ -447,8 +446,7 @@ h5 {
 
 .checkout_one {
     max-width: 1000px;
-    margin: auto;
-    margin-top: 68px;
+    margin: 90px auto;
 }
 
 input {
