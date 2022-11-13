@@ -4,6 +4,8 @@
 body {
     background: linear-gradient(180deg, #232027, #306495, #88168C);
     color: #fff;
+    min-height: 100vh;
+    margin: 0px;
 }
 
 header a {
@@ -31,9 +33,10 @@ padding: 5px;
 }
 
 .logo {
-    max-width: 240px;
+    max-width: 180px;
     max-height: 120%;
     margin-left: 150px;
+    margin-top: 10px;
 }
 
 .cart-icon {
@@ -126,6 +129,16 @@ button {
     margin-bottom: 11px;
 }
 
+.cta_checkout {
+    font-size: 1.6em;
+    background-color: var(--cta-primary);
+    color: #fff;
+    font-family: var(--text-heading);
+    padding: 5px 99px;
+    margin-top: 8px;
+    display: unset;
+}
+
 .secondary_cta_large {
     font-size: 1.6em;
     background-color: #F68B39;
@@ -134,17 +147,21 @@ button {
     padding: 5px 99px;
     margin-top: 8px;
     display: unset;
+}
 
+.checkout {
+    padding: 5px 49px;
+    margin-top: 155px;
 }
 
 footer {
     background-color: rgba(46, 40, 40, 0.2);
-    max-width: 100%;
-    margin: 0px;
-    height: 155px;
-    display: flex;
-    flex-direction: row;
+    padding: 50px;
+    margin: 50px 0 0 0;
+    height: 100%;
+    display: grid;
     flex: 1;
+    position: relative;
 }
 
 .product_page h1, .about_page h3, .contact_page h3 {
@@ -163,6 +180,7 @@ footer {
     background-position-y: 0%;
     position: relative;
     max-width: 100%;
+    margin-bottom: 70px;
 }
 
 .hero_content_one,
@@ -197,55 +215,49 @@ footer {
     top: 260px;
 } 
 
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
 
 .container h1 {
     color: #FEC818;
     font-size: 2em;
-    margin-left: 210px;
     margin-bottom: 0;
 }
 
-.featured, .contact_page_info
- {
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
     max-width: 1000px;
-    margin: auto;
-    display: flex;
-}
-
-.games-page {
-    margin-bottom: 45px;
-}
-
-
-.featured > * {
-    flex: 1;
-}
-
-.featured img {
-    width: auto;
-    height: 290px;
-    object-fit: cover;
+    margin: 14px auto 62px auto;
 }
 
 .card {
     background-color:rgba(46, 40, 40, 0.2);
-    width: 380px;
-    margin: 0 22px 0 0;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    width: 239px;
+    display: grid;
+    grid-template-columns: auto;
     height: 450px;
 }
 
-.card-image {
-    height: 300px;
-    width: auto;
+.card img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
 }
 
-.card-info-text {
-    display: flex;
-    flex-direction: row;
+
+/* games page */
+
+.games-page {
+    margin: 50px 0px;
 }
+
+/*product page*/
 
 .product_name {
     color: #FBB125;
@@ -382,10 +394,8 @@ h5 {
 
 /* cart page */
 
-.cart_page {
+.cart {
     display: flex;
-    flex: 1;
-    flex-direction: row;
     max-width: 1000px;
     margin: auto;
 }
@@ -394,11 +404,87 @@ h5 {
     width: 180px;
   }
 
-.cart_page h1 {
+.cart_page h1,
+.checkout_one h1 {
     color: #FEC818;
     font-size: 2em;
 }
 
-.cart_total {
-margin: 0 0 0 400px;
+.cart_page {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    margin-right: 70px;
+    align-items: flex-end;
 }
+
+
+.cart_product {
+    margin-left: 20px;
+}
+
+.cart_info {
+    margin-top: 22px;
+    margin-bottom: 113px;
+}
+
+.cart_info_2 {
+    margin: 100px 0 -100px 0px;
+}
+
+.icon {
+    padding: 20px;
+}
+
+.prog-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/* checkout delivery */
+
+.checkout_one {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 68px;
+}
+
+input {
+    border: 0px;
+    border-radius: 2px;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+}
+
+.form-wrapper {
+    display: flex;
+ }
+
+ .form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .form-wrapper img {
+    width: 180px;
+ }
+
+ .overview_text p {
+   font-size: 0.8em;
+   margin: 0px;
+ }
+
+ .overview_text {
+    flex: 3;
+ }
+
+ .place_order {
+    margin-right: 442px;
+ }
+
+ .success {
+    text-align: center;
+ }

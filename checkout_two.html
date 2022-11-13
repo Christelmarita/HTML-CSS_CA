@@ -5,7 +5,7 @@
     <meta http-equiz="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Buy and sell games in the GameHub universe of games." />
-    <title>GameHub | About</title>
+    <title>GameHub | Billing</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="css/media.css" rel="stylesheet"/>
@@ -18,7 +18,7 @@
         <section class="header-navigation">
             <div class="header-navigation-div">
                 <div class="logo">
-                    <a href="index.html"><img class="logo" src="images/Logo_game-hub.png" alt="Game hub logo"></a>
+                    <a href="index.html"><img class="logo" src="/images/Logo_game-hub.png" alt="Game hub logo"></a>
                     </div>
                 <label for="hamburger-menu">
                     <i class="fas fa-bars" aria-hidden="true"></i>
@@ -28,26 +28,37 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="games.html">All Games</a></li>
-                    <li><a href="about.html" class="active">About</a></li>    
+                    <li><a href="about.html">About</a></li>    
                     <li><a href="contact.html">Contact</a></li> 
                 </ul>
                 </nav>
                 <div class="cart-icon">
-                    <a href="cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart active" aria-hidden="true" ></i></a>
                 </div>
         </section>
     </header>
-    <main class="about_page">
-        <section class="about_page_info">
-            <h3>About us</h3>
-            <div class="about_description">
-                <p>GAME HUB is a retailer of both used and new games, across multiple platforms. We strive to be the #1 destination for all your gaming needs. GAME HUB has a wide array of games, bur it didn´t start that way.Our founders Mikkel and Storm started out selling games from the bedroom in Mikkels dormitory i 2012. They saw a need for an easy and reliable access to games - both new and old - in their college campus. The rumour quickly spread and by the end of 2013 they had to rent a warehouse to house all of their inventory. 2017 was the year they went online, and the rest is history.</p>
-            </div>
+    <main class="checkout_one">
+        <section>
+        <img src="images/prog-bar-2.png" class="prog-bar">
         </section>
-        <section class="about_image">
-            <div class="about_img">
-            <img src="images/about_image.jpg" alt="Image of computers"></a>
+            <h1>Billing</h1>
+        <form>
+            <div class="form-wrapper">
+                <section>
+                    <label for="card">Card number</label>
+                    <input type="text" id="card" name="card">
+                    <label for="card name">Cardholder name</label>
+                    <input type="text" id="card name" name="card name">
+                </section>
+                <section>
+                    <label for="exp">Exp date</label>
+                    <input type="text" id="exp" name="exp">
+                    <label for="CCV">CCV</label>
+                    <input type="text" id="CCV" name="CCV">
+                </section>
             </div>
+            <a href="checkout_three.html" class="cta_checkout">Go to overview</a>
+        </form>
         </section>
     </main>
     <footer>
