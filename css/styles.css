@@ -44,6 +44,10 @@ label {
     display: none;
 }
 
+.form-wrapper label {
+    display: block;
+}
+
 .fa-solid {
     margin-top: -200px;
 }
@@ -287,8 +291,6 @@ footer {
 /* Space War */
 
 .product-info {
-    margin-top: -50px;
-    margin-left: 25px;
     margin-bottom: auto;
     max-width: 100%;
 }
@@ -328,10 +330,6 @@ footer {
 
 /* About Us */
 
-.product-info {
-    margin-top: -50px;
-    margin-bottom: auto;
-}
 
 .about_page {
     max-width: 1000px;
