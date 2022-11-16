@@ -1,18 +1,11 @@
-@media (min-width: 600px) {
-    .logo {
-        margin-left: -150px;
-    }
-}
 
 /* MAX 950 */
 
 @media (max-width: 950px) {
 
 .hero {
-        background-image: url("../images/Header_image.jpg");
 background-size: inherit;
 background-position-x: 24%;
-margin-bottom: -100px;
     }
 
 .featured {
@@ -27,11 +20,25 @@ margin-bottom: -100px;
 
 }
 
+.about_page {
+    flex-direction: column;
+}
+
 .product_page {
     flex: 1;
     flex-direction: column;
     justify-content: center;
     max-width: 600px;
+    text-align: center;
+}
+
+.product_info {
+    margin-left: 0px;
+    max-width: none;
+}
+
+.product_button {
+    display: inline-grid;
 }
 
 .secondary_cta_large {
@@ -44,14 +51,14 @@ nav {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     padding: 20px 30px;
     background-color: #262D3B;
     padding: 20px 35px;
  }
     
-#hamburger-menu {
-    display: none;
+ label {
+    display: block;
 }
     
 #hamburger-menu:checked ~ nav {
@@ -62,8 +69,25 @@ nav li {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    }
 }
 
+@media (max-width: 905px) {
+    .contact_page_info {
+        flex-direction: column;
+}
+
+    .cart {
+        flex-direction: column;
+    }
+
+    .cart_info {
+        margin-bottom: 0px;
+    }
+
+    .checkout {
+        margin-top: 0px;
+    }
 }
 
 /* MAX 600 */
@@ -83,9 +107,7 @@ nav li {
 .secondary_cta_large {
     display: ruby-text;
     }
-.product_page {
-    margin-left: 100px;
-}
+
 
 .form-wrapper {
     display: flex;
@@ -93,4 +115,14 @@ nav li {
     margin: 20px;
 }
 
+.cta_checkout {
+    
+}
+
+}
+
+@media (min-width:810px) {
+    .header-content {
+        background: none;
+    }
 }
