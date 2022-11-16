@@ -70,6 +70,15 @@ nav li {
     flex-direction: column;
     margin: 20px;
     }
+
+.overview_content {
+    display: flex;
+    flex-direction: column;
+}  
+
+.checkout_three {
+    margin: 0px;
+}
 }
 
 @media (max-width: 905px) {
