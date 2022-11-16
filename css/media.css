@@ -128,4 +128,9 @@ nav li {
     .header-content {
         background: none;
     }
+    
+.form-wrapper label {
+    display: block;
+}
+
 }
