@@ -1,7 +1,7 @@
 
 /* MAX 950 */
 
-@media (max-width: 950px) {
+@media (max-width: 990px) {
 
 .hero {
 background-size: inherit;
@@ -42,7 +42,9 @@ background-position-x: 24%;
 
 nav {
     display: none;
-   z-index: 1000;
+    z-index: 1000;
+    position: absolute;
+    top: 107px;
 }
 
 nav li {
