@@ -36,6 +36,10 @@ nav li {
     padding: 0px 90px 0 0;
 }
 
+nav ul {
+    margin: 0px;
+}
+
 #hamburger-menu {
     display: none;
 }
