@@ -8,7 +8,7 @@ const products = [
         genre: "Strategy",
         inCart: 0,
         description: "Fight to keep the Zoidbergens from occupying and taking over your home planet Ezu. Fight alongside your friends in this multiplayer game from Fubisoft Corportions.",
-        imgSrc: "/images/spacewar.png",
+        imgSrc: "/images/spacewar.jpg",
     },
     {
         id: 1,
