@@ -26,7 +26,7 @@ function formValidation(event) {
         formError = true;
     }
 
-    if (checkingLength(address.value.trim(), 20) === true) {
+    if (checkingLength(address.value.trim(), 0) === true) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
