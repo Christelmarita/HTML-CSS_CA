@@ -516,7 +516,7 @@ h5 {
 
 .checkout_one {
     max-width: 1000px;
-    margin: 140px 10% auto 10%;
+    margin: 140px 10% 50px 10%;
     justify-content: center;
     display: flex;
     flex-direction: column;
