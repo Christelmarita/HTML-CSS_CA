@@ -321,6 +321,13 @@ footer {
     object-fit: cover;
 }
 
+.card img:hover,
+.logo:hover  {
+    filter:brightness(1.2);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 /*product page*/
 
 .product_name {
