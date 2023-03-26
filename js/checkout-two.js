@@ -28,7 +28,7 @@ function formValidation(event) {
         formError = true;
     }
 
-    if (checkingLength(exp.value.trim(), 5) === true) {
+    if (checkingLength(exp.value.trim(), 0) === true) {
         expError.style.display = "none";
     } else {
         expError.style.display = "block";
