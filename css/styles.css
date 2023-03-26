@@ -367,7 +367,7 @@ footer {
 
 .product_page {
     max-width: 1000px;
-    margin: 120px 10% 50px 10%;
+    margin: 140px 10% 50px 10%;
     display: flex;
 }
 
@@ -456,6 +456,10 @@ h5 {
 
 /* cart page */
 
+.image-game {
+    height: 300px;
+}
+
 .cart {
     display: flex;
     max-width: 1000px;
@@ -468,7 +472,7 @@ h5 {
     flex: 1;
     max-width: 1000px;
     margin-right: 70px;
-    align-items: center;
+    margin-top: 2%;
 }
 
 

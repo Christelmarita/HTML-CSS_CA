@@ -1,8 +1,6 @@
 // SELECT ELEMENT //
 const games = document.querySelector(".featured");
 const basketItems = document.querySelector(".cart_product");
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
 const addToBasketBtn = document.querySelector(".add-to-basket");
 
 // RENDER PRODUCT //
@@ -28,12 +26,6 @@ function renderGames(){
 }
 
 renderGames ();
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    console.log("test");
-})
 
 function showMessage() {
     alert("The product is successfully added to your basket!");
