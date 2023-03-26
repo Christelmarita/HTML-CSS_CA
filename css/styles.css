@@ -367,7 +367,7 @@ footer {
 
 .product_page {
     max-width: 1000px;
-    margin: 120px 10% auto 10%;
+    margin: 120px 10% 50px 10%;
     display: flex;
 }
 
@@ -403,7 +403,7 @@ footer {
 
 .about_page {
     max-width: 1000px;
-    margin: 120px 10% auto 10%;
+    margin: 120px 10% 50px 10%;
     display: flex;
     z-index: 1;
 }
@@ -459,7 +459,7 @@ h5 {
 .cart {
     display: flex;
     max-width: 1000px;
-    margin: 120px 10% auto 10%;
+    margin: 120px 10% 50px 10%;
     flex-direction: column;
 }
 
