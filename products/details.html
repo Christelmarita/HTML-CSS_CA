@@ -23,28 +23,29 @@
     </script>
 </head>
 <body>
-    <header class="container">
-        <section class="header-navigation">
+    <header class="topbar">
+        <nav class="navbar nav-container">
             <a href="../index.html"><img class="logo" src="../images/Logo_game-hub.png" alt="Game hub logo"></a>
-            <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../games.html" class="active">All Games</a></li>
-                    <li><a href="../about.html">About</a></li>    
-                    <li><a href="../contact.html">Contact</a></li> 
-                </ul>
-            </nav>
-            <div class="cart-icon">
-                <a href="../cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-            </div>
-        </section>
-    </header>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="games.html" class="active nav-link">All Games</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>    
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> 
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+        </div>
+        </nav>
+</header>
     <main class="product_page">
         <section class="product-image">
             <div>
-                <img src="../images/product-image_space-war.png" alt="Space war game cover"></a>
+                <img src="/images/spacewar.png" alt="Space war game cover"></a>
             </div>
         </section>
         <section class="product-info">
@@ -56,11 +57,12 @@
             <p><strong>Console:</strong> Playstation</p>
             <p><strong>Genre:</strong> Strategy</p>
             <div class="product_button">
-                <button type="button" class="cta_large">Add to basket</button>
-                <a href="../cart.html" class="secondary_cta_large">Buy it now</a>
+                <button type="button" onclick="showMessage()" class="cta_large add-to-basket add-to-basket">Add to basket</button>
+                <a href="../cart.html" class="secondary_cta_large detail_cta">Buy it now</a>
                 <p class="detail">Free shipping on all orders over €25</p>
             </div>
         </section>
+    </div>
     </main>
     <footer>
         <div class="icon">
@@ -76,5 +78,7 @@
             <a href="contact.html"><i class="fa-solid fa-phone-flip"></i>Contact</a>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

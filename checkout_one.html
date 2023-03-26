@@ -23,52 +23,48 @@
     </script>
 </head>
 <body>
-    <header class="container">
-        <section class="header-navigation">
+    <header class="topbar">
+        <nav class="navbar nav-container">
             <a href="index.html"><img class="logo" src="images/Logo_game-hub.png" alt="Game hub logo"></a>
-            <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="games.html">All Games</a></li>
-                    <li><a href="about.html">About</a></li>    
-                    <li><a href="contact.html">Contact</a></li> 
-                </ul>
-            </nav>
-            <div class="cart-icon">
-                <a href="cart.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-            </div>
-        </section>
-    </header>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">All Games</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>    
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> 
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><i class="fas fa-shopping-cart fa-lg active-cart" aria-hidden="true"></i></a>
+        </div>
+        </nav>
+</header>
     <main class="checkout_one">
         <section>
             <img src="images/prog-bar-1.png" class="prog-bar">
         </section>
         <h1>Delivery</h1>
-        <form>
-            <div class="form-wrapper">
-                <section>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                    <label for="name">Full name</label>
-                    <input type="text" id="name" name="name">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city">
-                </section>
-                <section>
-                    <label for="mobile">Mobile</label>
-                    <input type="text" id="mobile" name="mobile">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address">
-                    <label for="country">Country</label>
-                    <input type="text" id="country" name="country">
-                </section>
+        <form id="form-container">
+            <div class="input-container">
+                <label for="email">Email (Required)</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+                <div class="form-error" id="email-error">Please enter a valid email address</div>
             </div>
+            <div class="input-container">
+                <label for="fullName">Name (Required)</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Full Name">
+                <div class="form-error" id="fullName-error">Please add name</div>
+            </div>
+            <div class="input-container">
+                <label for="address">Address (25 characters minimum)</label>
+                <input id="address" name="address" type="text" placeholder="Address">
+                <div class="form-error" id="address-error">The address does not contain enough characters</div>
+            </div>
+            <button type="submit" class="submitForm">Continue to billing</button>
         </form>
-        <a href="checkout_two.html" class="secondary_cta_large checkout">Continue to billing</a>
     </main>
     <footer>
         <div class="icon">
@@ -84,5 +80,7 @@
             <a href="contact.html"><i class="fa-solid fa-phone-flip"></i>Contact</a>
         </div>
     </footer>
+    <script src="./js/checkout_one.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>
